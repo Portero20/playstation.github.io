@@ -1,0 +1,265 @@
+/* Tipografía (Montserrat) */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Variables */
+
+:root {
+
+    --color-white: #FFFFFF;
+    -color-black: #000000;
+    --blue-playstation: #003087;
+    --black-playstation: #1c1c1c;
+    --cta-primary: #003087;
+    --cta-secondary: #000000;
+
+}
+
+/* Reseteo */
+
+*,
+*::before,
+*::after {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    hyphens: auto;
+
+
+}
+
+img {
+
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+a {
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+
+}
+
+li {
+
+    list-style-type: none;
+
+}
+
+/* Header */
+
+.header__playstation {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: linear-gradient(to right, #003087, #015BD8);
+    color: var(--color-white);
+    font-weight: 500;
+
+    & .link__logo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        gap: 1rem;
+
+    }
+
+}
+
+.navbar__playstation > .container__links {
+
+    display: flex;
+    gap: 2rem;
+
+    & .important__link {
+
+        font-weight: 700;
+
+    }
+
+}
+
+.logo__header {
+
+    width: 20%;
+
+}
+
+/* Section welcome */
+
+.article__welcome {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 7rem;
+    background: linear-gradient(to right, #FFFFFF, #F0F0F0);
+
+    & .content__welcome, .header__welcome {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & .header__welcome {
+
+            & .title__welcome {
+
+                color: initial;
+                font-weight: 600;
+                font-size: 2.3rem;
+
+                & .line__title {
+
+                    border-bottom: 2px solid #0000FF;
+
+                }
+
+            }
+
+            & .paragraph__welcome {
+
+                max-width: 50ch;
+                font-weight: 400;
+                color: initial;
+            
+            }
+
+        }
+
+        & .footer__welcome {
+
+            display: flex;
+            gap: 1rem;
+
+            & .button__consoles, .button__history  {
+
+                color: var(--color-white);
+                padding: .8rem;
+                border-radius: .5rem;
+                border: none;
+                cursor: pointer;
+
+            }
+
+            & .button__consoles {
+
+                background-color: var(--cta-primary);
+
+            }
+
+            & .button__history {
+
+                background: none;
+                border: 1px solid var(--black-playstation);
+                color: var(--cta-secondary);
+
+            }
+
+        }
+
+    }
+
+    & .joystick__ps4 {
+
+        width: 30%;
+        transition: rotate .3s ease;
+
+        &:hover {
+    
+            rotate: 10deg;
+    
+        }
+    
+    }
+
+}
+
+
+
+/* Section history */
+
+.section__history {
+
+    background-color: #e5d283;
+
+}
+
+/* Section consoles */
+
+.section__consoles {
+
+    background-color: var(--blue-playstation);
+
+    & .header__consoles {
+
+        & .subtitle__consoles {
+
+            color: white;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+/* Section gallery */
+
+.section__gallery {
+
+    background-color: #22668D;
+
+}
+
+/* Botón de Whatsapp */
+
+.float__icon{
+	position:fixed;
+    padding: 1rem;
+	bottom:20px;
+	right:20px;
+	background-color:#128C7E;
+	color:#FFF;
+	border-radius: 3.12rem;
+}
+
+.whatsapp__icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+
+}
+  
+
+/* Animaciones CSS */
